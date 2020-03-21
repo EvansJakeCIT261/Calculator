@@ -1,31 +1,81 @@
 <!DOCTYPE html>
 <html>
+<style>
+div {
+  width: 200px;
+  height: 200px;
+  background-color: cyan;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#myDiv:hover {
+  transform: scale3d(2.5, 1.2, 0.3);
+  transition: transform .5s;
+}
+div1 {
+  width: 900px;
+  height: 200px;
+  background-color: Aquamarine;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#myDiv1:hover {
+  transform: scale3d(2.5, 1.2, 0.3);
+  transition: transform .5s;
+}
+</style>
 <body>
 
-<h2>Basic HTML Table</h2>
-
-<table style="width:100%">
+<h2>Calculator</h2>
+<table>
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
+    <th><div1 id="myDiv1">InputInputInputInputInputInputInputInputInputInputInputInputInputInputInputInputInputInputInputInputInput</div></th>
   <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
+	<td>  
+	  <table style="width:10%">
+	    <tr>
+        <td><div id="myDiv">%</div></td>
+        <td><div id="myDiv">CE</div></td>
+        <td><div id="myDiv">C</div></td>
+	    <td><div id="myDiv">DEL</div></td>
+      </tr>
+      <tr>
+        <td><div id="myDiv">1/x</div></td>
+        <td><div id="myDiv">x2</div></td>
+        <td><div id="myDiv">2/x</div></td>
+	    <td><div id="myDiv">/</div></td>
+      </tr>
+      <tr>
+        <td><div id="myDiv"><img src="7.png" height="200" width="200"></div></td>
+        <td><div id="myDiv"><img src="8.png" height="200" width="200"></div></td>
+        <td><div id="myDiv"><img src="9.png" height="200" width="200"></div></td>
+	    <td><div id="myDiv">X</div></td>
+      </tr>
+      <tr>
+        <td><div id="myDiv"><img src="4.png" height="200" width="200"></div></td>
+        <td><div id="myDiv"><img src="5.png" height="200" width="200"></div></td>
+        <td><div id="myDiv"><img src="6.png" height="200" width="200"></div></td>
+	    <td><div id="myDiv">-</div></td>
+      </tr>
+      <tr>
+        <td><div id="myDiv"><img src="1.png" height="200" width="200"></div></td>
+        <td><div id="myDiv"><img src="2.png" height="200" width="200"></div></td>
+        <td><div id="myDiv"><img src="3.png" height="200" width="200"></div></td>
+	    <td><div id="myDiv">+</div></td>
+      </tr>
+      <tr>
+        <td><div id="myDiv">+/-</div></td>
+        <td><div id="myDiv"><img src="0.png" height="200" width="200"></div></td>
+        <td><div id="myDiv">.</div></td>
+	    <td><div id="myDiv">=</div></td>
+      </tr>
+    </table>
+  </td>
   </tr>
 </table>
 
 </body>
 </html>
+
