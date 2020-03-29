@@ -3,9 +3,6 @@
 <head>
 <meta charset="utf-8">
 <title>Calculator</title>
-<script>
-document.getElementById("demo").innerHTML = "My First JavaScript";
-</script>
 <style>
 div {
   width: 100px;
@@ -28,7 +25,7 @@ div1 {
 }
 
 #myDiv1:hover {
-  transform: scale3d(2.5, 1.2, 0.3);
+  transform: scale3d(0.2, 0.2, 0.2);
   transition: transform .5s;
 }
 </style>
@@ -37,51 +34,104 @@ div1 {
 <h2>Calculator</h2>
 <table>
   <tr>
-    <th><div1 id="myDiv1">Input  Input  Input  Input  Input  Input  Input  Input</div></th>
+    <th id="input1">0</th>
   <tr>
 	<td>  
 	  <table style="width:10%">
 	    <tr>
-        <td><div id="myDiv">%</div></td>
-        <td><div id="myDiv">CE</div></td>
-        <td><div id="myDiv">C</div></td>
-	    <td><div id="myDiv">DEL</div></td>
+        <td><button type="button" onclick="percent(input)"><div id="myDiv">%</div></button></td>
+        <td><button type="button" onclick="clearM(input)"><div id="myDiv">CE</div></button></td>
+        <td><button type="button" onclick="clear(input)"><div id="myDiv">C</div></button></td>
+	    <td><button type="button" onclick="del(input)"><div id="myDiv">DEL</div></button></td>
       </tr>
       <tr>
-        <td><div id="myDiv">1/x</div></td>
-        <td><div id="myDiv">x2</div></td>
-        <td><div id="myDiv">2/x</div></td>
-	    <td><div id="myDiv">/</div></td>
+        <td><button type="button" onclick="seven(input)"><div id="myDiv">1/x</div></button></td>
+        <td><button type="button" onclick="seven(input)"><div id="myDiv">x2</div></button></td>
+        <td><button type="button" onclick="seven(input)"><div id="myDiv">2/x</div></button></td>
+	    <td><button type="button" onclick="divide(input)"><div id="myDiv">/</div></button></td>
       </tr>
       <tr>
-        <td><button type="button" onclick="quartsToLiters()">Click to Convert<div id="myDiv"><img src="7.png" height="100" width="100"></div></button></td>
-        <td><div id="myDiv"><img src="8.png" height="100" width="100"></div></td>
-        <td><div id="myDiv"><img src="9.png" height="100" width="100"></div></td>
-	    <td><div id="myDiv">X</div></td>
+        <td><button type="button" onclick="seven(input)"><div id="myDiv"><img src="7.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="eight(input)"><div id="myDiv"><img src="8.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="nine(input)"><div id="myDiv"><img src="9.png" height="100" width="100"></div></button></td>
+	    <td><button type="button" onclick="multiply(input)"><div id="myDiv">X</div></button></td>
       </tr>
       <tr>
-        <td><div id="myDiv"><img src="4.png" height="100" width="100"></div></td>
-        <td><div id="myDiv"><img src="5.png" height="100" width="100"></div></td>
-        <td><div id="myDiv"><img src="6.png" height="100" width="100"></div></td>
-	    <td><div id="myDiv">-</div></td>
+        <td><button type="button" onclick="four(input)"><div id="myDiv"><img src="4.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="five(input)"><div id="myDiv"><img src="5.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="six(input)"><div id="myDiv"><img src="6.png" height="100" width="100"></div></button></td>
+	    <td><button type="button" onclick="subtract(input)"><div id="myDiv">-</div></button></td>
       </tr>
       <tr>
-        <td><div id="myDiv"><img src="1.png" height="100" width="100"></div></td>
-        <td><div id="myDiv"><img src="2.png" height="100" width="100"></div></td>
-        <td><div id="myDiv"><img src="3.png" height="100" width="100"></div></td>
-	    <td><div id="myDiv">+</div></td>
+        <td><button type="button" onclick="one(input)"><div id="myDiv"><img src="1.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="two(input)"><div id="myDiv"><img src="2.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="three(input)"><div id="myDiv"><img src="3.png" height="100" width="100"></div></button></td>
+	    <td><button type="button" onclick="add(input)"><div id="myDiv">+</div></button></td>
       </tr>
       <tr>
-        <td><div id="myDiv">+/-</div></td>
-        <td><div id="myDiv"><img src="0.png" height="100" width="100"></div></td>
-        <td><div id="myDiv">.</div></td>
-	    <td><div id="myDiv">=</div></td>
+        <td><button type="button" onclick="seven(input)"><div id="myDiv">+/-</div></button></td>
+        <td><button type="button" onclick="zero(input)"><div id="myDiv"><img src="0.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="decimal(input)"><div id="myDiv">.</div></button></td>
+	    <td><button type="button" onclick="total(input)"><div id="myDiv">=</div></button></td>
       </tr>
     </table>
   </td>
   </tr>
 </table>
-
 </body>
+<script>
+var input = "0";
+var total = "0";
+function one(input) {
+	total = input + "1";
+	document.getElementById("input1").innerHTML = total;
+	return total;
+}
+function two(input) {
+	total = input + "2";
+	document.getElementById("input1").innerHTML = total;
+	return total;
+}
+function three(input) {
+	total = input + "3";
+	document.getElementById("input1").innerHTML = total;
+	return total;
+}
+function four(input) {
+	total = input + "4";
+	document.getElementById("input1").innerHTML = total;
+	return total;
+}
+function five(input) {
+	total = input + "5";
+	document.getElementById("input1").innerHTML = total;
+	return total;
+}
+function six(input) {
+	total = input + "6";
+	document.getElementById("input1").innerHTML = total;
+	return total;
+}
+function seven(input) {
+	total = input + "7";
+	document.getElementById("input1").innerHTML = total;
+	return total;
+}
+function eight(input) {
+	total = input + "8";
+	document.getElementById("input1").innerHTML = total;
+	return total;
+}
+function nine(input) {
+	total = input + "9";
+	document.getElementById("input1").innerHTML = total;
+	return total;
+}
+function zero(input) {
+	total = input + "0";
+	document.getElementById("input1").innerHTML = total;
+	return total;
+}
+</script>
 </html>
 
