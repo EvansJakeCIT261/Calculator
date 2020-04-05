@@ -11,68 +11,62 @@ div {
   border: 1px solid black;
   text-align: center;
 }
-
+div1 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: 1px solid black;
+  text-align: center;
+}
 #myDiv:hover {
   transform: scale3d(2.5, 1.2, 0.3);
   transition: transform .5s;
 }
-div1 {
-  width: 450px;
-  height: 100px;
-  background-color: Aquamarine;
-  border: 1px solid black;
-  text-align: center;
-}
+
 
 #myDiv1:hover {
-  transform: scale3d(0.2, 0.2, 0.2);
-  transition: transform .5s;
 }
 </style>
 <body>
 
-<h2>Calculator</h2>
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;Calculator</h2>
 <table>
   <tr>
     <th id="input1">0</th>
   <tr>
 	<td>  
 	  <table style="width:10%">
-	    <tr>
-        <td><button type="button" onclick="percent(input)"><div id="myDiv">%</div></button></td>
-        <td><button type="button" onclick="clearM(input)"><div id="myDiv">CE</div></button></td>
-        <td><button type="button" onclick="clear(input)"><div id="myDiv">C</div></button></td>
-	    <td><button type="button" onclick="del(input)"><div id="myDiv">DEL</div></button></td>
+      <tr>
+        <td><button type="button" onclick="divideB(total)"><div id="myDiv">/</div></button></td>
+        <td><button type="button" onclick="expB(total)"><div id="myDiv">x2</div></button></td>
+        <td><button type="button" onclick="clearAll(total)"><div id="myDiv">CE</div></button></td>
+	    <td><button type="button" onclick="clearB(total)"><div id="myDiv">C</div></button></td>
       </tr>
       <tr>
-        <td><button type="button" onclick="seven(input)"><div id="myDiv">1/x</div></button></td>
-        <td><button type="button" onclick="seven(input)"><div id="myDiv">x2</div></button></td>
-        <td><button type="button" onclick="seven(input)"><div id="myDiv">2/x</div></button></td>
-	    <td><button type="button" onclick="divide(input)"><div id="myDiv">/</div></button></td>
+        <td><button type="button" onclick="seven(total)"><div id="myDiv"><img src="7.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="eight(total)"><div id="myDiv"><img src="8.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="nine(total)"><div id="myDiv"><img src="9.png" height="100" width="100"></div></button></td>
+	    <td><button type="button" onclick="multiplyB(total)"><div id="myDiv">X</div></button></td>
       </tr>
       <tr>
-        <td><button type="button" onclick="seven(input)"><div id="myDiv"><img src="7.png" height="100" width="100"></div></button></td>
-        <td><button type="button" onclick="eight(input)"><div id="myDiv"><img src="8.png" height="100" width="100"></div></button></td>
-        <td><button type="button" onclick="nine(input)"><div id="myDiv"><img src="9.png" height="100" width="100"></div></button></td>
-	    <td><button type="button" onclick="multiply(input)"><div id="myDiv">X</div></button></td>
+        <td><button type="button" onclick="four(total)"><div id="myDiv"><img src="4.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="five(total)"><div id="myDiv"><img src="5.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="six(total)"><div id="myDiv"><img src="6.png" height="100" width="100"></div></button></td>
+	    <td><button type="button" onclick="subtractB(total)"><div id="myDiv">-</div></button></td>
       </tr>
       <tr>
-        <td><button type="button" onclick="four(input)"><div id="myDiv"><img src="4.png" height="100" width="100"></div></button></td>
-        <td><button type="button" onclick="five(input)"><div id="myDiv"><img src="5.png" height="100" width="100"></div></button></td>
-        <td><button type="button" onclick="six(input)"><div id="myDiv"><img src="6.png" height="100" width="100"></div></button></td>
-	    <td><button type="button" onclick="subtract(input)"><div id="myDiv">-</div></button></td>
+        <td><button type="button" onclick="one(total)"><div id="myDiv"><img src="1.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="two(total)"><div id="myDiv"><img src="2.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="three(total)"><div id="myDiv"><img src="3.png" height="100" width="100"></div></button></td>
+	    <td><button type="button" onclick="addB(total)"><div id="myDiv">+</div></button></td>
       </tr>
       <tr>
-        <td><button type="button" onclick="one(input)"><div id="myDiv"><img src="1.png" height="100" width="100"></div></button></td>
-        <td><button type="button" onclick="two(input)"><div id="myDiv"><img src="2.png" height="100" width="100"></div></button></td>
-        <td><button type="button" onclick="three(input)"><div id="myDiv"><img src="3.png" height="100" width="100"></div></button></td>
-	    <td><button type="button" onclick="add(input)"><div id="myDiv">+</div></button></td>
-      </tr>
-      <tr>
-        <td><button type="button" onclick="seven(input)"><div id="myDiv">+/-</div></button></td>
-        <td><button type="button" onclick="zero(input)"><div id="myDiv"><img src="0.png" height="100" width="100"></div></button></td>
-        <td><button type="button" onclick="decimal(input)"><div id="myDiv">.</div></button></td>
-	    <td><button type="button" onclick="total(input)"><div id="myDiv">=</div></button></td>
+        <td><button type="button" onclick="percentB(total)"><div id="myDiv">%</div></button></td>
+        <td><button type="button" onclick="zero(total)"><div id="myDiv"><img src="0.png" height="100" width="100"></div></button></td>
+        <td><button type="button" onclick="decimalB(total)"><div id="myDiv">.</div></button></td>
+	    <td><button type="button" onclick="totalB(total)"><div id="myDiv">=</div></button></td>
       </tr>
     </table>
   </td>
@@ -80,57 +74,97 @@ div1 {
 </table>
 </body>
 <script>
-var input = "0";
-var total = "0";
+var input = "";
+var total = "";
+var totalN;
+var changeN;
+var changeS = "";
+var operator = "";
+
 function one(input) {
 	total = input + "1";
 	document.getElementById("input1").innerHTML = total;
-	return total;
+	return;
 }
 function two(input) {
 	total = input + "2";
 	document.getElementById("input1").innerHTML = total;
-	return total;
+	return;
 }
 function three(input) {
 	total = input + "3";
 	document.getElementById("input1").innerHTML = total;
-	return total;
+	return;
 }
 function four(input) {
 	total = input + "4";
 	document.getElementById("input1").innerHTML = total;
-	return total;
+	return;
 }
 function five(input) {
 	total = input + "5";
 	document.getElementById("input1").innerHTML = total;
-	return total;
+	return;
 }
 function six(input) {
 	total = input + "6";
 	document.getElementById("input1").innerHTML = total;
-	return total;
+	return;
 }
 function seven(input) {
 	total = input + "7";
 	document.getElementById("input1").innerHTML = total;
-	return total;
+	return;
 }
 function eight(input) {
 	total = input + "8";
 	document.getElementById("input1").innerHTML = total;
-	return total;
+	return;
 }
 function nine(input) {
 	total = input + "9";
 	document.getElementById("input1").innerHTML = total;
-	return total;
+	return;
 }
 function zero(input) {
 	total = input + "0";
 	document.getElementById("input1").innerHTML = total;
-	return total;
+	return;
+}
+function clearAll(input) {
+	total = "";
+	input = "";
+	totalN = 0;
+	operator = "";
+	document.getElementById("input1").innerHTML = "0";
+	return;
+}
+function clearB(input) {
+	total = "";
+	input = "";
+	document.getElementById("input1").innerHTML = "0";
+	return;
+}
+function decimalB(input) {
+	changeN = parseFloat(input);
+	changeS = Number(changeN);
+	total = changeS + ".";
+	document.getElementById("input1").innerHTML = total;
+	return;
+}
+function multiplyB(input) {
+    if (input = "0") {
+	  document.getElementById("input1").innerHTML = "0";
+	  return;
+	} else {
+	  changeN = parseFloat(input);
+	
+	  changeS = Number(changeN);
+	  total = changeS + ".";
+	  document.getElementById("input1").innerHTML = total;
+	  operator = "M";
+	return;
+	}
 }
 </script>
 </html>
