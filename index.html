@@ -92,120 +92,70 @@ var operator = "";
 function one(input) {
 	total = input + "1";
 	document.getElementById("input1").innerHTML = total;
-	document.getElementById("test1").innerHTML = input;
-	document.getElementById("test2").innerHTML = totalN;
-	document.getElementById("test3").innerHTML = changeN;
-	document.getElementById("test4").innerHTML = changeS;
-    document.getElementById("test5").innerHTML = operator;
-	document.getElementById("test6").innerHTML = null;
+	testIt();
 	//totalN = parseFloat(total);
 	return;
 }
 function two(input) {
 	total = input + "2";
 	document.getElementById("input1").innerHTML = total;
-	document.getElementById("test1").innerHTML = input;
-	document.getElementById("test2").innerHTML = totalN;
-	document.getElementById("test3").innerHTML = changeN;
-	document.getElementById("test4").innerHTML = changeS;
-    document.getElementById("test5").innerHTML = operator;
-	document.getElementById("test6").innerHTML = null;
+	testIt();
 	//totalN = parseFloat(total);
 	return;
 }
 function three(input) {
 	total = input + "3";
 	document.getElementById("input1").innerHTML = total;
-	document.getElementById("test1").innerHTML = input;
-	document.getElementById("test2").innerHTML = totalN;
-	document.getElementById("test3").innerHTML = changeN;
-	document.getElementById("test4").innerHTML = changeS;
-    document.getElementById("test5").innerHTML = operator;
-	document.getElementById("test6").innerHTML = null;
+	testIt();
 	//totalN = parseFloat(total);
 	return;
 }
 function four(input) {
 	total = input + "4";
 	document.getElementById("input1").innerHTML = total;
-	document.getElementById("test1").innerHTML = input;
-	document.getElementById("test2").innerHTML = totalN;
-	document.getElementById("test3").innerHTML = changeN;
-	document.getElementById("test4").innerHTML = changeS;
-    document.getElementById("test5").innerHTML = operator;
-	document.getElementById("test6").innerHTML = null;
+	testIt();
 	//totalN = parseFloat(total);
 	return;
 }
 function five(input) {
 	total = input + "5";
 	document.getElementById("input1").innerHTML = total;
-	document.getElementById("test1").innerHTML = input;
-	document.getElementById("test2").innerHTML = totalN;
-	document.getElementById("test3").innerHTML = changeN;
-	document.getElementById("test4").innerHTML = changeS;
-    document.getElementById("test5").innerHTML = operator;
-	document.getElementById("test6").innerHTML = null;
+	testIt();
 	//totalN = parseFloat(total);
 	return;
 }
 function six(input) {
 	total = input + "6";
 	document.getElementById("input1").innerHTML = total;
-	document.getElementById("test1").innerHTML = input;
-	document.getElementById("test2").innerHTML = totalN;
-	document.getElementById("test3").innerHTML = changeN;
-	document.getElementById("test4").innerHTML = changeS;
-    document.getElementById("test5").innerHTML = operator;
-	document.getElementById("test6").innerHTML = null;
+	testIt();
 	//totalN = parseFloat(total);
 	return;
 }
 function seven(input) {
 	total = input + "7";
 	document.getElementById("input1").innerHTML = total;
-	document.getElementById("test1").innerHTML = input;
-	document.getElementById("test2").innerHTML = totalN;
-	document.getElementById("test3").innerHTML = changeN;
-	document.getElementById("test4").innerHTML = changeS;
-    document.getElementById("test5").innerHTML = operator;
-	document.getElementById("test6").innerHTML = null;
+	testIt();
 	//totalN = parseFloat(total);
 	return;
 }
 function eight(input) {
 	total = input + "8";
 	document.getElementById("input1").innerHTML = total;
-	document.getElementById("test1").innerHTML = input;
-	document.getElementById("test2").innerHTML = totalN;
-	document.getElementById("test3").innerHTML = changeN;
-	document.getElementById("test4").innerHTML = changeS;
-    document.getElementById("test5").innerHTML = operator;
-	document.getElementById("test6").innerHTML = null;
+	testIt();
 	//totalN = parseFloat(total);
 	return;
 }
 function nine(input) {
 	total = input + "9";
 	document.getElementById("input1").innerHTML = total;
-	document.getElementById("test1").innerHTML = input;
-	document.getElementById("test2").innerHTML = totalN;
-	document.getElementById("test3").innerHTML = changeN;
-	document.getElementById("test4").innerHTML = changeS;
-    document.getElementById("test5").innerHTML = operator;
-	document.getElementById("test6").innerHTML = null;
+	testIt();
 	//totalN = parseFloat(total);
 	return;
 }
 function zero(input) {
 	total = input + "0";
 	document.getElementById("input1").innerHTML = total;
-	document.getElementById("test1").innerHTML = input;
-	document.getElementById("test2").innerHTML = totalN;
-	document.getElementById("test3").innerHTML = changeN;
-	document.getElementById("test4").innerHTML = changeS;
-    document.getElementById("test5").innerHTML = operator;
-	document.getElementById("test6").innerHTML = null;
+	testIt();
 	//totalN = parseFloat(total);
 	return;
 }
@@ -217,101 +167,201 @@ function clearAll(input) {
 	changeS = "";
 	operator = "";
 	document.getElementById("input1").innerHTML = "0";
-	document.getElementById("test1").innerHTML = input;
-	document.getElementById("test2").innerHTML = totalN;
-	document.getElementById("test3").innerHTML = changeN;
-	document.getElementById("test4").innerHTML = changeS;
-    document.getElementById("test5").innerHTML = operator;
-	document.getElementById("test6").innerHTML = null;
+	testIt();
 	return;
 }
 function clearB(input) {
 	total = "";
 	input = "";
+	testIt();
 	document.getElementById("input1").innerHTML = "0";
-	document.getElementById("test1").innerHTML = input;
-	document.getElementById("test2").innerHTML = totalN;
-	document.getElementById("test3").innerHTML = changeN;
-	document.getElementById("test4").innerHTML = changeS;
-    document.getElementById("test5").innerHTML = operator;
-	document.getElementById("test6").innerHTML = null;
+	testIt();
 	return;
 }
 function decimalB(input) {
 	changeN = parseFloat(input);
-	changeS = Number(changeN);
+	changeS = Number(totalN);
 	total = changeS + ".";
-	document.getElementById("input1").innerHTML = total;
-	document.getElementById("test1").innerHTML = input;
-	document.getElementById("test2").innerHTML = totalN;
-	document.getElementById("test3").innerHTML = changeN;
-	document.getElementById("test4").innerHTML = changeS;
-    document.getElementById("test5").innerHTML = operator;
-	document.getElementById("test6").innerHTML = null;
+	testIt();
 	return;
 }
 function multiplyB(input) {
    operatorF();
    operator = "M";
+   testIt();
+   return;
 }
 function divideB(input) {
   operatorF();
   operator = "D";
+  testIt();
+  return;
 }	
 function expB(input) {
   operatorF();
   operator = "E";
+  testIt();
+  return;
 }
 function subtractB(input) {
   operatorF();
   operator = "S";
+  testIt();
+  return;
 }
 function addB(input) {
   operatorF();
   operator = "A";
+  testIt();
+  return;
 }
 function totalB(input) {
   operatorF();
   operator = "T";
+  testIt();
+  return;
 }
 function percentB(input) {
   operatorF();
   operator = "P";
+  testIt();
+  return;
 }
 function operatorF() {
-	changeN = parseFloat(total);
-	
-	//changeS = Number(changeN);
-	//total = changeS;
-    if (operator = "M") {
+	changeN = parseFloat(total);	
+    if (operator == "M") {
+	  if (totalN == null) {
+	    totalN = 1;
+		totalN = changeN * totalN;
+	    changeS = Number(totalN);
+	    document.getElementById("input1").innerHTML = changeS;
+	    total = "";
+	    input = "";
+	    testIt();
+	    //storeIt();
+	   return;
+	  } else {	  
 	  totalN = changeN * totalN;
-	  changeS = Number(changeN);
-	  total = changeS;
-	  document.getElementById("input1").innerHTML = total;
-	  document.getElementById("test1").innerHTML = input;
-	  document.getElementById("test2").innerHTML = totalN;
-	  document.getElementById("test3").innerHTML = changeN;
-	  document.getElementById("test4").innerHTML = changeS;
-      document.getElementById("test5").innerHTML = operator;
-	  document.getElementById("test6").innerHTML = null;
+	  changeS = Number(totalN);
+	  document.getElementById("input1").innerHTML = changeS;
+	  total = "";
 	  input = "";
+	  testIt();
+	  //storeIt();
+	  return;
+	  }
+	} 
+	if (operator == "A") {
+	  if (totalN == null) {
+		totalN = 0;
+	    totalN = changeN + totalN;
+	    changeS = Number(totalN);
+	    document.getElementById("input1").innerHTML = changeS;
+	    total = "";	  
+	    input = "";
+	    testIt();
+	    //storeIt();
+	    return;
+	  } else {
+	    totalN = changeN + totalN;
+	    changeS = Number(totalN);
+	    document.getElementById("input1").innerHTML = changeS;
+	    total = "";	  
+	    input = "";
+	    testIt();
+	    //storeIt();
+	    return;	  
+	  }
+	}
+	if (operator == "D") {
+	  totalN = totalN / changeN;
+	  changeS = Number(totalN);
+	  document.getElementById("input1").innerHTML = changeS;
+	  total = "";	  
+	  input = "";
+	  testIt();
+	  //storeIt();
 	  return;
 	}
-	if (operator = "M") {
-	  totalN = changeN * totalN;
-	  changeS = Number(changeN);
-	  total = changeS;
-	  document.getElementById("input1").innerHTML = total;
-	  document.getElementById("test1").innerHTML = input;
-	  document.getElementById("test2").innerHTML = totalN;
-	  document.getElementById("test3").innerHTML = changeN;
-	  document.getElementById("test4").innerHTML = changeS;
-      document.getElementById("test5").innerHTML = operator;
-	  document.getElementById("test6").innerHTML = null;
+	if (operator == "S") {
+	  totalN = changeN - totalN;
+	  changeS = Number(totalN);
+	  document.getElementById("input1").innerHTML = changeS;
+	  total = "";	  
 	  input = "";
+	  testIt();
+	  //storeIt();
 	  return;
-	} 
+	}
+	if (operator == "P") {
+	  totalN = changeN * totalN;
+	  changeS = Number(totalN);
+	  document.getElementById("input1").innerHTML = changeS;
+	  total = "";	  
+	  input = "";
+	  testIt();
+	  //storeIt();
+	  return;
+	}
+	if (operator == "E") {
+	  totalN = changeN * totalN;
+	  changeS = Number(totalN);	  
+	  document.getElementById("input1").innerHTML = changeS;
+	  total = "";
+	  input = "";
+	  testIt();
+	  //storeIt();
+	  return;
+	}
+	if (operator == "T") {
+	  totalN = changeN * totalN;
+	  changeS = Number(totalN);
+	  document.getElementById("input1").innerHTML = changeS;
+	  total = "";	  
+	  input = "";
+	  testIt();
+	  //storeIt();
+	  return;
+	}	
+	total = "";	  
+	input = "";
+	testIt();
+	return;
 }
+function storeIt() {	
+  // Store
+  localStorage.setItem("storeTotal", total);
+  localStorage.setItem("storeInput", input);
+  localStorage.setItem("storeTotalN", totalN);
+  localStorage.setItem("storeChangeN", changeN);
+  localStorage.setItem("storeOperator", operator);
+  storeObj();
+  return;
+  }
+function retrieveIt() {
+  // Retrieve
+  total = localStorage.getItem("storeTotal");
+  input = localStorage.getItem("storeInput");
+  totalN = localStorage.getItem("storeTotalN");
+  changeN = localStorage.getItem("changeN");
+  operator = localStorage.getItem("storeOperator");
+  return;
+}
+function testIt() {
+  document.getElementById("test1").innerHTML = input;
+  document.getElementById("test2").innerHTML = totalN;
+  document.getElementById("test3").innerHTML = changeN;
+  document.getElementById("test4").innerHTML = changeS;
+  document.getElementById("test5").innerHTML = operator;
+  document.getElementById("test6").innerHTML = null;
+  return;
+}
+function storeObj() {
+  var storeJSON = '{"storeTotal":"total","storeInput":"input","storeTotalN":"totalN","storeChangeN":"changeN","storeOperator":"operator"}';
+  var myObj = JSON.parse(storeJSON);
+  return;
+} 
+
 </script>
 </html>
 
